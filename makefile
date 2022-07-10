@@ -1,7 +1,7 @@
 src = $(wildcard ./*.c)  
 obj = $(patsubst ./%.c, ./%.o, $(src)) 
 
-myArgs= -Wall -g 
+myArgs= -Wall -g -levent
 target=server
 CC=gcc
 
